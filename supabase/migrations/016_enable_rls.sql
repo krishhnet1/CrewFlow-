@@ -1,0 +1,15 @@
+alter table organizations         enable row level security;
+alter table profiles              enable row level security;
+alter table locations             enable row level security;
+alter table areas                 enable row level security;
+alter table area_task_templates   enable row level security;
+alter table shifts                enable row level security;
+alter table shift_trade_offers    enable row level security;
+alter table timesheets            enable row level security;
+alter table task_completions      enable row level security;
+alter table timesheet_audit_log   enable row level security;
+alter table messages              enable row level security;
+alter table message_reactions     enable row level security;
+alter table holidays              enable row level security;
+alter table payroll_exports       enable row level security;
+alter table push_notification_log enable row level security;

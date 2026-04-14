@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l ../docs/*.md)",
+      "Bash(npm --version)",
+      "Bash(npx --version)",
+      "Bash(npx --yes create-expo-app@latest mobile --template blank-typescript --no-install)",
+      "Bash(npm install:*)",
+      "Bash(npx --yes expo install expo-router expo-linking expo-constants expo-status-bar @supabase/supabase-js expo-secure-store expo-camera expo-sqlite react-native-reanimated react-native-gesture-handler @expo/vector-icons react-native-safe-area-context react-native-screens)",
+      "Bash(npx tsc:*)",
+      "Bash(npm ls:*)",
+      "Bash(npx --yes expo install --check)",
+      "Bash(npm info:*)",
+      "Bash(supabase --version)",
+      "Bash(npx --yes supabase --version)",
+      "Bash(npx expo:*)"
+    ]
+  }
+}
