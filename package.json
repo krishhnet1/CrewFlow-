@@ -9,5 +9,8 @@
     "mobile": "npm --workspace mobile run start",
     "mobile:ios": "npm --workspace mobile run ios",
     "mobile:android": "npm --workspace mobile run android"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.2"
   }
 }
