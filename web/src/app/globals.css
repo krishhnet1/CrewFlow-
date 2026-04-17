@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg-primary: #0B0F1A;
+  --bg-card: #141928;
+  --bg-elevated: #1C2238;
+  --accent: #FF6B2C;
+  --accent-pressed: #E75A1F;
+  --text-primary: #FFFFFF;
+  --text-secondary: #8B92A8;
+  --text-muted: #555D75;
+  --border-subtle: #1F2538;
+  --border-default: #2A3247;
+}
+
+html, body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  .card {
+    @apply bg-bg-card border border-border-subtle rounded-card p-xl;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-sm h-11 px-lg rounded-btn bg-accent text-text-inverse font-bold text-sm transition-colors hover:bg-accent-pressed disabled:bg-bg-elevated disabled:text-text-muted;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-sm h-11 px-lg rounded-btn border border-border text-text-primary font-semibold text-sm hover:bg-bg-elevated transition-colors;
+  }
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-sm h-11 px-lg rounded-btn bg-status-danger text-white font-bold text-sm;
+  }
+  .badge {
+    @apply inline-flex items-center h-6 px-md rounded-pill text-[11px] font-semibold uppercase tracking-wider;
+  }
+  .badge-success { @apply bg-status-success-soft text-status-success; }
+  .badge-warning { @apply bg-status-warning-soft text-status-warning; }
+  .badge-danger  { @apply bg-status-danger-soft  text-status-danger; }
+  .badge-info    { @apply bg-status-info-soft    text-status-info; }
+  .input {
+    @apply w-full h-11 px-lg rounded-btn bg-bg-card border border-border text-text-primary placeholder:text-text-muted focus:border-border-strong focus:outline-none focus:ring-2 focus:ring-accent/40 transition-colors;
+  }
+  .table-head {
+    @apply text-[11px] font-bold uppercase tracking-wider text-text-secondary;
+  }
+}

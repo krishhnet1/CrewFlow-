@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "workspaces": [
-    "mobile"
+    "mobile",
+    "web"
   ],
   "scripts": {
     "mobile": "npm --workspace mobile run start",
     "mobile:ios": "npm --workspace mobile run ios",
-    "mobile:android": "npm --workspace mobile run android"
+    "mobile:android": "npm --workspace mobile run android",
+    "web": "npm --workspace web run dev",
+    "web:build": "npm --workspace web run build"
   },
   "devDependencies": {
     "typescript": "~5.9.2"
