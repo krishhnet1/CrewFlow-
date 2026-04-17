@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Env files (never commit real credentials)
+.env
+.env.*
+!.env.example
+
+# Expo
+.expo/
+.expo-shared/
+dist/
+web-build/
+
+# Metro / React Native caches
+.metro-health-check*
+*.tsbuildinfo
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# Native build output
+android/app/build/
+android/build/
+android/.gradle/
+ios/build/
+ios/Pods/
+
+# Debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
